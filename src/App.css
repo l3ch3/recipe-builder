@@ -16,7 +16,8 @@ main {
 }
 
 .header-img {
-  max-width: 100px;
+  max-width: 7%;
+  min-width: 70px;
 }
 
 .header-name {

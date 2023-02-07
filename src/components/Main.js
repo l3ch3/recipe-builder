@@ -1,9 +1,9 @@
 import React from "react";
-import recipes from "./recipes";
+import recipes from "../assets/recipes";
 
 export default function Main() {
   function getRecipe() {
-    console.log("click");
+    console.log(recipes[900]);
   }
 
   return (
