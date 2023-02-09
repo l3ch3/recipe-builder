@@ -1,3 +1,6 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
 header {
   background-color: #5d5c61;
   color: white;
@@ -10,9 +13,11 @@ header {
 main {
   padding: 4em 6em;
   border: black solid;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #e98074;
 }
 
 .header-img {
@@ -23,6 +28,7 @@ main {
 .header-name {
   margin: 0;
   margin-left: auto;
+  font-family: "Dancing Script", cursive;
 }
 
 .main-button {
@@ -40,6 +46,20 @@ main {
   border: solid black;
   width: 100%;
   padding: 1em 3em;
+  background-color: #d8c3a5;
+}
+
+a:link {
+  color: #e85a4f;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active,
+a:visited {
+  color: black;
 }
 
 .recipe-title {

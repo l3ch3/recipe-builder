@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <img className="header-img" src={require("../images/header-icon.png")} />
-      <h2 className="header-name">Random Recipe Selector</h2>
+      <h1 className="header-name">Random Recipe Selector</h1>
     </header>
   );
 }

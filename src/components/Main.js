@@ -22,7 +22,7 @@ export default function Main() {
 
   const recipeIngredients = () =>
     recipe.Ingredients.map((Ingredient) => (
-      <p key={Ingredient}>{Ingredient}</p>
+      <p key={Ingredient.Name}>{Ingredient}</p>
     ));
 
   function getRecipe() {
@@ -34,7 +34,6 @@ export default function Main() {
       <button className="main-button" onClick={getRecipe}>
         Random Recipe
       </button>
-
       {recipe && ( // if recipe is not Null - run this statement
         <div className="recipe">
           <a href={recipe.url} target="_blank">
