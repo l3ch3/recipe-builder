@@ -1,6 +1,8 @@
 import React from "react";
 import recipes from "../assets/recipes";
 import { useState } from "react";
+import RecipeMethod from "./RecipeMethod";
+import RecipeIngredients from "./RecipeIngredients";
 
 export default function Main() {
   function getRandomRecipe() {
@@ -11,19 +13,10 @@ export default function Main() {
   }
   const [recipe, setRecipe] = useState(getRandomRecipe());
 
-  const recipeMethod = () =>
-    recipe.Method.map((step) => (
-      <p key={step}>
-        {recipe.Method.indexOf(step) + 1}. {step}
-      </p>
-    ));
-  //need to be function else it will always run and will throw an error at the inital state when
-  // recipe = null
-
-  const recipeIngredients = () =>
-    recipe.Ingredients.map((Ingredient) => (
-      <p key={Ingredient.Name}>{Ingredient}</p>
-    ));
+  // const recipeIngredients = () =>
+  //   recipe.Ingredients.map((Ingredient) => (
+  //     <p key={Ingredient.Name}>{Ingredient}</p>
+  //   ));
 
   function getRecipe() {
     setRecipe(getRandomRecipe());
@@ -43,13 +36,12 @@ export default function Main() {
           <p className="recipe-description">{recipe.Description} </p>
           <div>
             <h4>{`(${recipe.Ingredients.length}) Ingredients`}</h4>
-            {/* <p>{recipeIngredients()}</p> */}
-            <p>{recipeIngredients()}</p>
+            <RecipeIngredients Ingredients={recipe.Ingredients} />
           </div>
           <div className="recipe-method">
             <h4>Method</h4>
-            <p>{recipeMethod()}</p>
-            {/* dont forget to call the function  */}
+            <RecipeMethod Method={recipe.Method} />
+            {/* Method is the prop name in RecipeMethod */}
           </div>
         </div>
       )}
