@@ -8,11 +8,12 @@ header {
   padding: 2%;
   display: flex;
   align-items: center;
+  margin-bottom: 0.1em;
 }
 
 main {
   padding: 4em 6em;
-  border: black solid;
+  /* border: black solid; */
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -22,13 +23,17 @@ main {
 
 .header-img {
   max-width: 7%;
-  min-width: 70px;
+  min-width: 60px;
 }
 
 .header-name {
   margin: 0;
   margin-left: auto;
   font-family: "Dancing Script", cursive;
+}
+
+.header-tabs {
+  background-color: #e85a4f;
 }
 
 .main-button {
@@ -41,7 +46,8 @@ main {
   cursor: pointer;
 }
 
-.recipe {
+.recipe,
+.search-results {
   margin-top: 4em;
   border: solid black;
   width: 100%;

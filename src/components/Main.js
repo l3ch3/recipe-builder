@@ -13,11 +13,6 @@ export default function Main() {
   }
   const [recipe, setRecipe] = useState(getRandomRecipe());
 
-  // const recipeIngredients = () =>
-  //   recipe.Ingredients.map((Ingredient) => (
-  //     <p key={Ingredient.Name}>{Ingredient}</p>
-  //   ));
-
   function getRecipe() {
     setRecipe(getRandomRecipe());
   }
