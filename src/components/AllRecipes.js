@@ -9,3 +9,11 @@ export default function ({ recipes }) {
     </div>
   );
 }
+
+{
+  /* <div>
+      {recipes.map((recipe) => (
+        <p key={recipe.Name}>{recipe.Name}</p>
+      ))}
+    </div> */
+}

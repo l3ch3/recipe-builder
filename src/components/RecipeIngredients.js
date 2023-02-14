@@ -5,7 +5,7 @@ export default function RecipeIngredients(props) {
   //   props.Ingredients.map((Ingredient) => (
   //     <p key={Ingredient}> {Ingredient}</p>
   //   ));
-  //sam - how to turn this into a normal function
+
   function recipeIngredients() {
     return props.Ingredients.map((Ingredient) => (
       <p key={Ingredient}> {Ingredient}</p>
@@ -23,7 +23,7 @@ export default function RecipeIngredients(props) {
 //How sam would it do
 // const recipientIngredients = ({ ingredients }) => (
 //   <div>
-//      { props.ingredients.map((ingredient) =>  (<p>{ingredient}</p>))}
+//      {ingredients.map((ingredient) =>  (<p>{ingredient}</p>))}
 //   </div>
 // )
 // export default recipientIngredients
