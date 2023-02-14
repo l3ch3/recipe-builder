@@ -4,8 +4,8 @@ body {
 header {
   background-color: #5d5c61;
   color: white;
-  height: 7vh;
-  padding: 2%;
+  height: auto;
+  padding: 1%;
   display: flex;
   align-items: center;
   margin-bottom: 0.1em;
@@ -23,9 +23,8 @@ main {
 
 .header-img {
   max-width: 7%;
-  min-width: 60px;
+  min-width: 50px;
 }
-
 .header-name {
   margin: 0;
   margin-left: auto;
@@ -53,6 +52,10 @@ main {
   width: 100%;
   padding: 1em 3em;
   background-color: #d8c3a5;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
 a:link {
@@ -73,8 +76,5 @@ a:visited {
 }
 
 hr {
-  width: 60%;
-  height: 3px;
-  background-color: #5d5c61;
   border-radius: 5px;
 }

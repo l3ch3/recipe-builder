@@ -27,7 +27,9 @@ export default function Main() {
           <a href={recipe.url} target="_blank">
             <h2 className="recipe-title">{recipe.Name}</h2>
           </a>
-          <hr></hr>
+          <div className="d-flex justify-content-center">
+            <hr className="col-8 border border-2  border-dark"></hr>
+          </div>
           <p className="recipe-description">{recipe.Description} </p>
           <div>
             <h4>{`(${recipe.Ingredients.length}) Ingredients`}</h4>
