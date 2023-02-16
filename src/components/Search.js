@@ -18,7 +18,6 @@ export default function Search() {
         ></input>
       </div>
       <div className="search-results">
-        <p>{search}</p>
         <AllRecipes recipes={recipes} input={search} />
       </div>
     </main>
