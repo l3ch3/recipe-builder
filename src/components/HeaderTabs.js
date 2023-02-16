@@ -6,7 +6,7 @@ import Search from "./Search";
 
 export default function HeaderTabs() {
   return (
-    <Tabs defaultActiveKey="randomRecipe" id="uncontrolled-tab-example">
+    <Tabs defaultActiveKey="recipeSearch" id="uncontrolled-tab-example">
       <Tab eventKey="randomRecipe" title="Recipe" className="header-tabs">
         <Main />
       </Tab>
