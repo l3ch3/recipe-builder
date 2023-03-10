@@ -19,13 +19,15 @@ export default function ({ recipes, input }) {
 
   return (
     <div>
-      <p>{filteredRecipes.length} Recipes</p>
+      <p className="fw-bold">
+        {filteredRecipes.length} {""}
+        {filteredRecipes.length >= 2 ? "Recipes Found" : "Recipe Found"}
+      </p>
       {filteredRecipes.map(
         // maps the new array of the  filtered recipes
         (
           retrunedRecipe, //returnedRecipe is the name given to each object
           index
-          // map (element, index, array) -> use index for the key
         ) => {
           return <p key={index}>{retrunedRecipe.Name}</p>;
           //add bootstrap dropdown here
